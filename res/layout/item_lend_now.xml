@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+    <TextView
+        android:id="@+id/author"
+        style="@style/Smile.TextView._Black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6.0dip"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="20sp" 
+        android:textColor="#9933CC"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+         <TextView
+            android:id="@+id/isb"
+            style="@style/Smile.TextView._Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4.0dip"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="条码号："
+            android:textSize="15sp" />
+        
+        <TextView
+            android:id="@+id/isbn"
+            style="@style/Smile.TextView._Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4.0dip"
+            android:layout_toRightOf="@id/isb"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/lend"
+            style="@style/Smile.TextView._Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4.0dip"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="借阅日期："
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/lendday"
+            style="@style/Smile.TextView._Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4.0dip"
+            android:layout_toRightOf="@id/lend"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/give"
+            style="@style/Smile.TextView._Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4.0dip"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="应还日期："
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/giveday"
+            style="@style/Smile.TextView._Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4.0dip"
+            android:layout_toRightOf="@id/give"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/can"
+            style="@style/Smile.TextView._Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4.0dip"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="续借量："
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/canlend"
+            style="@style/Smile.TextView._Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4.0dip"
+            android:layout_toRightOf="@id/can"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/loca"
+            style="@style/Smile.TextView._Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4.0dip"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="馆藏地："
+            android:textSize="15sp" />
+        <ImageView 
+            android:id="@+id/aa"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+             android:layout_marginLeft="5dp"
+            android:layout_marginTop="4.0dip"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:layout_toRightOf="@id/loca"
+            android:layout_alignBottom="@id/loca"
+            android:background="@drawable/location"/>
+
+        <TextView
+            android:id="@+id/location"
+            style="@style/Smile.TextView._Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.0dip"
+            android:layout_toRightOf="@id/aa"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/othe"
+            style="@style/Smile.TextView._Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4.0dip"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="附件："
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/other"
+            style="@style/Smile.TextView._Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4.0dip"
+            android:layout_toRightOf="@id/othe"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</LinearLayout>

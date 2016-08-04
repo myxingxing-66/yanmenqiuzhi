@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include
+        android:id="@+id/common_actionbar"
+        layout="@layout/include_action_bar" />
+	
+    <EditText 
+        android:id="@+id/edit_title"
+        android:paddingLeft="10dp"
+        android:hint="书名"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_edit_height"
+        android:layout_margin="10dp"
+        android:background="@drawable/input"/>
+    
+    <EditText 
+        android:id="@+id/edit_author"
+        android:paddingLeft="10dp"
+        android:hint="作者"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_edit_height"
+        android:layout_margin="10dp"
+        android:background="@drawable/input"/>
+    
+    <EditText 
+        android:id="@+id/edit_describe"
+        android:paddingLeft="10dp"
+        android:hint="描述(最多100字)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:inputType="textMultiLine"
+        android:minLines="5"
+        android:gravity="top|left"
+        android:maxLength="150"
+        android:background="@drawable/input"/>
+    
+</LinearLayout>

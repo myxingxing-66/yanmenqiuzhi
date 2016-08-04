@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="titlespinner">
+        <item >题名</item>
+        <item >责任者</item>
+        <item >主题词</item>
+        <item >ISBN/ISSN</item>
+        <item >订购号</item>
+        <item >分类号</item>
+        <item >索书号</item>
+        <item >出版社</item>
+        <item >丛书名</item>
+        <item >题名拼音</item>
+        <item >责任者拼音</item>
+    </string-array>
+    
+    <string name="app_name">燕门求知</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="login_username_hint">请输入用户名&#8230;</string>
+    <string name="login_password_hint">请输入密码&#8230;</string>
+    <string name="login_email_hint">请在此输入密码&#8230;</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="register_txt1">还没有账号？</string>
+    <string name="register_txt2">立即注册 ></string>
+    <string name="login_account">账号 </string>
+    <string name="login_pwd">密码 </string>
+    <string name="login_email">确认密码 </string>
+    <string name="message_search_hint">搜索&#8230;</string>
+    
+    <string name="main_tab_recent">会话</string>
+    <string name="main_tab_contact">求知</string>
+    <string name="mian_tab_set">设置</string>
+    
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载&#8230;</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    
+    <string name="add_avator">头像</string>
+    <string name="add_nick">昵称</string>
+    <string name="add_name">账号</string>
+    <string name="add_name_hint">请输入昵称&#8230;</string>
+    <string name="add_gender">性别</string>
+    
+    <string name="set_notify">接收新消息通知</string>
+    <string name="set_myinfo">个人资料</string>
+    <string name="set_voice">声音</string>
+    <string name="set_vibrate">震动</string>
+    <string name="tips">提示</string>
+    
+    <string name="logout">退出登陆</string>
+    <string name="pop_photo">拍照</string>
+    <string name="pop_choose">从手机相册选中</string>
+    <string name="network_tips">当前网络不可用,请检查您的网络!</string>
+    <string name="toast_error_password_null">密码不能为空</string>
+    <string name="toast_error_username_null">用户名不能为空</string>
+    <string name="toast_error_comfirm_password">输入的两次密码不一致</string>
+
+    <string name="chat">发起会话</string>
+    <string name="add_friend">添加好友</string>
+    
+    <string name="send_state">已读</string>
+    
+    <string name="picture">照片</string>
+    <string name="camera">拍摄</string>
+    
+    <string name="username">用户名</string>
+    <string name="search">搜索</string>
+    
+    <string name="new_friends">新朋友</string>
+    
+    <string name="lost">Lost</string>
+    <string name="found">Found</string>
+    
+
+    
+    <string name="progress_loading">正在获取数据..</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+        <Button
+            android:id="@+id/btn_mylibrary"
+            android:layout_alignParentTop="true"
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/new_base_color"
+            android:scaleType="matrix"
+            android:text="请登录"
+            android:textColor="@drawable/tab_textcolor"
+            android:textSize="20sp" />
+
+        <ListView
+            android:id="@+id/list_library"
+            android:layout_below="@id/btn_mylibrary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/base_color_text_white"
+            android:dividerHeight="2dp" />
+
+        <Button
+            android:id="@+id/btn_set_list"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/new_base_color"
+            android:drawableTop="@drawable/tab_set_btn"
+            android:scaleType="matrix"
+            android:text="@string/mian_tab_set"
+            android:textColor="@drawable/tab_textcolor"
+            android:textSize="12sp" />
+
+</RelativeLayout>

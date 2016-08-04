@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:id="@+id/discuss_activity_linearlayouot"
+    	android:orientation="vertical" >
+    
+    	<include
+        	android:id="@+id/common_actionbar"
+        	layout="@layout/include_action_bar" />
+		<LinearLayout 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal">
+	    	<TextView 
+        		android:paddingLeft="10dp"
+        		android:text="书名:"
+        		android:layout_width="wrap_content"
+        		android:layout_height="@dimen/base_edit_height"
+        		android:layout_margin="10dp"
+        		android:textSize="20sp"/>
+	    	<TextView 
+        		android:id="@+id/tv_book_title"
+        		android:paddingLeft="10dp"
+        		android:layout_width="wrap_content"
+        		android:layout_height="@dimen/base_edit_height"
+        		android:layout_weight="1"
+        		android:layout_margin="10dp"
+        		android:textSize="15sp"/>
+		</LinearLayout>
+		
+		<ImageView 
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content"
+   		    android:paddingLeft="10dp"
+   		    android:paddingRight="10dp"
+   		    android:src="@drawable/base_horization_line"/>
+		
+  		<LinearLayout 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal">
+	    	<TextView 
+        		android:paddingLeft="10dp"
+        		android:text="作者:"
+        		android:layout_width="wrap_content"
+        		android:layout_height="@dimen/base_edit_height"
+        		android:layout_margin="10dp"
+        		android:textSize="20sp"/>
+	    	<TextView 
+        		android:id="@+id/tv_book_author"
+        		android:paddingLeft="10dp"
+        		android:layout_width="wrap_content"
+        		android:layout_height="@dimen/base_edit_height"
+        		android:layout_weight="1"
+        		android:layout_margin="10dp"
+        		android:textSize="15sp"/>
+		</LinearLayout>
+		
+  		<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/base_edit_height"
+                android:layout_margin="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="20sp"
+                android:text="发布者：" />
+
+            <TextView
+                android:id="@+id/tv_book_user"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/base_edit_height"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:textColor="#63B8FF"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/base_edit_height"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp" 
+                android:textColor="@color/base_color_text_gray"
+                android:text="(点击名字查看信息)"/>
+        </LinearLayout>
+		
+  		<ImageView 
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content"
+   		    android:paddingLeft="10dp"
+   		    android:paddingRight="10dp"
+   		    android:src="@drawable/base_horization_line"/>
+  		
+   		<LinearLayout 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal">
+	    	<TextView 
+        		android:paddingLeft="10dp"
+        		android:text="描述:"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_margin="10dp"
+        		android:textSize="20sp"/>
+	    	<TextView 
+        		android:id="@+id/tv_book_describe"
+        		android:paddingLeft="10dp"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_weight="1"
+        		
+        		android:layout_margin="10dp"/>
+		</LinearLayout>	
+		
+   		<ImageView 
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content"
+   		    android:paddingLeft="10dp"
+   		    android:paddingRight="10dp"
+   		    android:src="@drawable/base_horization_line"/>
+   		
+   		<TextView 
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:paddingTop="30dp"
+   		    android:paddingLeft="10dp"
+   		    android:text="评论:"/>
+   		
+		<ListView 
+    		android:id="@+id/discuss_list"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginBottom="50dp">
+		</ListView>
+	</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/base_scrollview_top_height"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+  
+        <EditText
+            android:id="@+id/edit_user_discuss"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/base_edit_input"
+            android:imeOptions="flagNoExtractUi"
+            android:minHeight="@dimen/tab_padding_left_right"
+            android:padding="5dp" />
+
+        <Button
+            android:id="@+id/btn_book_discuss_send"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/btn_chat_send_selector"
+            android:gravity="center"
+            android:textColor="@color/base_color_text_black" />
+        
+    </LinearLayout>
+    
+
+</RelativeLayout>

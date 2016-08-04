@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_action_bar_book" />
+
+    <LinearLayout
+        android:id="@+id/layout_book_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Spinner
+            android:id="@+id/first_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/title_Id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+
+        <Button
+            android:id="@+id/searchok"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginRight="11dp"
+            android:background="@drawable/btn_login_selector"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="搜索"
+            android:textColor="@color/base_color_text_white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" >
+
+        <com.example.ysulib.view.xlist.XListView
+            android:id="@+id/book_discuss_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/base_color_text_white"
+            android:cacheColorHint="#00000000" />
+
+        <include layout="@layout/include_no_data" />
+
+        <include layout="@layout/include_progress" />
+"
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_new_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/shangyiye"
+            android:layout_width="5dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/preg"
+            android:paddingRight="10dp" />
+
+        <TextView
+            android:id="@+id/tv_current_page"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/xiayiye"
+            android:layout_width="5dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/next"
+            android:paddingRight="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

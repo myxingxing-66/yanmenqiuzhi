@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Smile.TextView._Black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6.0dip"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="20sp"
+        android:textColor="#9933CC"
+        />
+    <TextView 
+        android:id="@+id/isbn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Smile.TextView._Black"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4.0dip"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="15sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+    <TextView 
+        android:id="@+id/loca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="馆藏地："
+        style="@style/Smile.TextView._Black"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4.0dip"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="15sp"
+        />
+     <ImageView 
+            android:id="@+id/aa"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+             android:layout_marginLeft="5dp"
+            android:layout_marginTop="4.0dip"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:layout_toRightOf="@id/loca"
+            android:layout_alignBottom="@id/loca"
+            android:background="@drawable/location"/>
+    <TextView 
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/loca"
+        style="@style/Smile.TextView._Black"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4.0dip"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="15sp"
+        />
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+    <TextView 
+        android:id="@+id/hava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取书地：："
+        style="@style/Smile.TextView._Black"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4.0dip"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="15sp"
+        />
+     <ImageView 
+            android:id="@+id/aa1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+             android:layout_marginLeft="5dp"
+            android:layout_marginTop="4.0dip"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:layout_toRightOf="@id/hava"
+            android:layout_alignBottom="@id/hava"
+            android:background="@drawable/location"/>
+    <TextView 
+        android:id="@+id/havebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/aa1"
+        style="@style/Smile.TextView._Black"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4.0dip"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="15sp"
+        />
+    </RelativeLayout>
+    
+      <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+    <TextView 
+        android:id="@+id/preg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="到书日期："
+        style="@style/Smile.TextView._Black"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4.0dip"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="15sp"
+        />
+    <TextView 
+        android:id="@+id/pregday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/preg"
+        style="@style/Smile.TextView._Black"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4.0dip"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="15sp"
+        />
+    </RelativeLayout>
+    
+      <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+    <TextView 
+        android:id="@+id/end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="截止日期："
+        style="@style/Smile.TextView._Black"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4.0dip"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="15sp"
+        />
+    <TextView 
+        android:id="@+id/endday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/end"
+        style="@style/Smile.TextView._Black"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4.0dip"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="15sp"
+        />
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+    <TextView 
+        android:id="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="状态："
+        style="@style/Smile.TextView._Black"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4.0dip"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="15sp"
+        />
+    <TextView 
+        android:id="@+id/now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/no"
+        style="@style/Smile.TextView._Black"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4.0dip"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="15sp"
+        />
+    </RelativeLayout>
+      
+    
+    
+    
+    
+
+</LinearLayout>
