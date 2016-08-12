@@ -397,8 +397,11 @@ public class BookFragment extends FragmentBase implements OnItemClickListener,On
 				searchBookUtil.setStrText(strText);
 				searchBookBeanList = searchBookUtil.Search();
 				for(SearchBookBean searchBookBean : searchBookBeanList){
-					searchBookItemsList.add(new SearchBookItem(searchBookBean.getName(), searchBookBean.getAuther() + searchBookBean.getPublish(),
-							searchBookBean.getIsbn(), searchBookBean.getSave_num()+searchBookBean.getNow_num(), searchBookBean.getBook_url()));			
+					searchBookItemsList.add(new SearchBookItem(searchBookBean.getName(), 
+							searchBookBean.getAuther() + searchBookBean.getPublish(),
+							searchBookBean.getIsbn(), 
+							searchBookBean.getSave_num()+searchBookBean.getNow_num(), 
+							searchBookBean.getBook_url()));			
 				}
 				Message message = new Message();
 				message.what = SHOW_SEARCH;
