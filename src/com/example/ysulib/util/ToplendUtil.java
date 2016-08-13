@@ -17,12 +17,13 @@ public class ToplendUtil {
 		doc=Jsoup.parse(html);
 		Elements note=doc.getElementsByClass("table_line");
 		Elements note_tr=note.get(0).getElementsByTag("tr");
-		for(int i=1;i<note_tr.size();i++){
-			NoteList notetr=new NoteList();
-			Elements notetd=note_tr.get(i).getElementsByTag("td");
+		for (int i = 1; i < note_tr.size(); i++) {
+			NoteList notetr = new NoteList();
+			Elements notetd = note_tr.get(i).getElementsByTag("td");
 			notetr.setNumber(notetd.get(0).text().toString());
 			notetr.setTitle(notetd.get(1).text().toString());
-			notetr.setBookhref(notetd.get(1).getElementsByTag("a").attr("href").substring(2, 35).toString());
+			notetr.setBookhref(notetd.get(1).getElementsByTag("a").attr("href")
+					.substring(2, 35).toString());
 			notetr.setAuthor(notetd.get(2).text().toString());
 			notetr.setPublish(notetd.get(3).text().toString());
 			notetr.setIsbn(notetd.get(4).text().toString());
