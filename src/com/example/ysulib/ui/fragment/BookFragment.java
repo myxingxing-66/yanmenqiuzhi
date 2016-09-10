@@ -460,7 +460,7 @@ public class BookFragment extends FragmentBase implements OnItemClickListener,On
 		listview.setVisibility(View.VISIBLE);
 		layout_no.setVisibility(View.GONE);
 	}
-	
+	String  aString="123";
 	private void initTopLend(){
 		new Thread(new Runnable() {			
 			@Override

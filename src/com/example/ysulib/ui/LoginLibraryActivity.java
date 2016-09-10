@@ -2,9 +2,7 @@ package com.example.ysulib.ui;
 
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import org.apache.http.HttpEntity;
@@ -18,11 +16,6 @@ import org.apache.http.util.EntityUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
-
-import cn.bmob.v3.listener.UpdateListener;
-
-import com.example.ysulib.R;
-import com.example.ysulib.bean.User;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -41,6 +34,10 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
+import cn.bmob.v3.listener.UpdateListener;
+
+import com.example.ysulib.R;
+import com.example.ysulib.bean.User;
 
 
 public class LoginLibraryActivity extends ActivityBase implements OnClickListener{
